@@ -245,6 +245,9 @@ textarea {
   .home-hero__cta {
     margin-top: 5rem;
     text-align: center; }
+  .home-hero__cta a{
+    margin: 1rem;
+  }
 
 .about {
   background: #fafafa; }
