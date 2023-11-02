@@ -62,6 +62,10 @@ button {
 textarea {
   resize: none; }
 
+#images:hover{
+    transform: scale(0.9);
+}
+
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
