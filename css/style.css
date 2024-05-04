@@ -118,7 +118,7 @@ textarea {
 .heading-sec__sub {
   display: block;
   text-align: center;
-  color: #777;
+  color: black;
   font-size: 2rem;
   font-weight: 500;
   max-width: 80rem;
@@ -269,7 +269,12 @@ textarea {
       margin-bottom: 3rem; }
       @media only screen and (max-width: 37.5em) {
         .about__content-title {
-          font-size: 2.4rem; } }
+          font-size: 2.4rem;
+          margin-bottom: 3rem; 
+        } }
+    .about__content-skills{
+          margin-bottom: 5rem;
+        }     
     .about__content-details-para {
       font-size: 1.8rem;
       color: grey;
@@ -281,6 +286,11 @@ textarea {
         margin: 0 3px; }
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
+
+.icons{
+  display: flex;
+  gap: 1rem;
+}
 
 .projects__row {
   display: grid;
@@ -616,6 +626,95 @@ textarea {
     border-bottom: 0; }
 
 /* Education and Experience */
+
+.experience{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  padding-bottom: 5rem;
+  margin: 2px;
+  border: 2px solid black;
+}
+
+.experience-row .experience-column{
+  flex: 1 1 40rem;
+}
+
+.experience-column{
+  position: relative;
+  font-size: 2.5rem;
+  margin: 0 0 1.5 2rem;
+}
+
+.experience-column .experience-box{
+  position: relative;
+  border-left: .2rem solid black; ;
+}
+
+.experience-box .experience-content{
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experience-content .content a{
+  color: rgb(20, 17, 213);
+}
+
+.experience-box .experience-content::before{
+  content:'';
+  position: absolute;
+  top: 1.8rem;
+  left: -1.1rem;
+  width: 2rem;
+  height:2rem;
+  border-radius: 50%;
+  background-color:#02474A;
+  border: 2px solid #02474A;
+}
+
+.experience-box .content:hover {
+  background: #02474A;
+  color: #fff;
+}
+
+.experience-content .content{
+  position: relative;
+  padding: 1.5rem;
+  border-radius: .6rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  border: 2px solid #02474A;
+
+}
+
+.experience-content .content::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  transition: .5s;
+}
+
+.experience-content .content:hover::before{
+  width: 100%;
+}
+
+.experience-content .content h3{
+  font-size: 2rem;
+}
+
+.experience-content .content p{
+  font-size: 1.4rem;/*1.6*/
+  padding-top: .5rem;
+}
+
+
 .education{
   display: flex;
   justify-content: center;
@@ -639,7 +738,7 @@ textarea {
 
 .education-column .education-box{
   position: relative;
-  border-left: .2rem solid grey ;
+  border-left: .2rem solid black ;
 }
 
 .education-box .education-content{
@@ -648,7 +747,7 @@ textarea {
 }
 
 .education-content .content a{
-  color: rgb(0, 217, 255);
+  color: rgb(39, 229, 243);
 }
 
 .education-box .education-content::before{
@@ -659,12 +758,12 @@ textarea {
   width: 2rem;
   height:2rem;
   border-radius: 50%;
-  background-color:grey;
-  border: 2px solid grey;
+  background-color:#02474A;
+  border: 2px solid #02474A;
 }
 
 .education-box .content:hover {
-  background: grey;
+  background: #02474A;
   color: #fff;
 }
 
@@ -674,7 +773,7 @@ textarea {
   border-radius: .6rem;
   margin-bottom: 3rem;
   overflow: hidden;
-  border: 2px solid grey;
+  border: 2px solid #02474A;
 
 }
 
@@ -692,16 +791,6 @@ textarea {
 
 .education-content .content:hover::before{
   width: 100%;
-}
-
-.education-content .content .year{
-  font-size: 1.5rem;
-  color: black;
-  padding-bottom: .5rem;
-}
-
-.education-content .content .year i{
-  padding-right: .5rem;
 }
 
 .education-content .content h3{
@@ -763,19 +852,6 @@ textarea {
     @media only screen and (max-width: 56.25em) {
       .main-footer__lower {
         padding: 3.5rem 0; } }
-
-.skills {
-  display: flex;
-  flex-wrap: wrap; }
-  .skills__skill {
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
-    font-size: 1.6rem;
-    background: rgba(153, 153, 153, 0.2);
-    border-radius: 5px;
-    font-weight: 600;
-    color: #777; }
 
 .mouse {
   width: 25px;
