@@ -288,7 +288,8 @@ textarea {
         margin-bottom: 4rem; }
 
 .icons{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -645,7 +646,7 @@ textarea {
 .experience-column{
   position: relative;
   font-size: 2.5rem;
-  margin: 0 0 1.5 2rem;
+  margin: 0 0 1.5 rem;
 }
 
 .experience-column .experience-box{
@@ -656,10 +657,6 @@ textarea {
 .experience-box .experience-content{
   position: relative;
   padding-left: 2rem;
-}
-
-.experience-content .content a{
-  color: rgb(20, 17, 213);
 }
 
 .experience-box .experience-content::before{
