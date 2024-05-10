@@ -172,7 +172,7 @@ textarea {
   padding: 12rem 0; }
   @media only screen and (max-width: 56.25em) {
     .sec-pad {
-      padding: 8rem 0; } }
+      padding: 2rem 0; } }
 
 .text-primary {
   color: #fff;
@@ -302,7 +302,7 @@ textarea {
     .projects__row {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
-      margin-bottom: 8rem; } }
+      margin-bottom: 4rem; } }
   @media only screen and (max-width: 56.25em) {
     .projects__row {
       text-align: center; } }
