@@ -293,6 +293,12 @@ textarea {
   gap: 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .projects__row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -390,6 +396,9 @@ textarea {
       color: #999;
       font-weight: 600;
       font-size: 1.6rem; }
+    .contact__form-input:focus{
+      border: 2px solid #0062b9;
+    }
     .contact__form-input::-webkit-input-placeholder {
       color: #999;
       font-weight: 600;
